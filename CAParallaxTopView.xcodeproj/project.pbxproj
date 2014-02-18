@@ -19,6 +19,8 @@
 		D1B4D51718B2DF610028C988 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B4D4FF18B2DF610028C988 /* UIKit.framework */; };
 		D1B4D51F18B2DF610028C988 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1B4D51D18B2DF610028C988 /* InfoPlist.strings */; };
 		D1B4D52118B2DF610028C988 /* CAParallaxTopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4D52018B2DF610028C988 /* CAParallaxTopViewTests.m */; };
+		D1B4D52D18B2E12C0028C988 /* CAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4D52B18B2E12C0028C988 /* CAMainViewController.m */; };
+		D1B4D52E18B2E12C0028C988 /* CAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B4D52C18B2E12C0028C988 /* CAMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		D1B4D51C18B2DF610028C988 /* CAParallaxTopViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CAParallaxTopViewTests-Info.plist"; sourceTree = "<group>"; };
 		D1B4D51E18B2DF610028C988 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D1B4D52018B2DF610028C988 /* CAParallaxTopViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAParallaxTopViewTests.m; sourceTree = "<group>"; };
+		D1B4D52A18B2E12C0028C988 /* CAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMainViewController.h; sourceTree = "<group>"; };
+		D1B4D52B18B2E12C0028C988 /* CAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMainViewController.m; sourceTree = "<group>"; };
+		D1B4D52C18B2E12C0028C988 /* CAMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				D1B4D50B18B2DF610028C988 /* CAAppDelegate.m */,
 				D1B4D50D18B2DF610028C988 /* Images.xcassets */,
 				D1B4D50218B2DF610028C988 /* Supporting Files */,
+				D1B4D52A18B2E12C0028C988 /* CAMainViewController.h */,
+				D1B4D52B18B2E12C0028C988 /* CAMainViewController.m */,
+				D1B4D52C18B2E12C0028C988 /* CAMainViewController.xib */,
 			);
 			path = CAParallaxTopView;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			files = (
 				D1B4D50618B2DF610028C988 /* InfoPlist.strings in Resources */,
 				D1B4D50E18B2DF610028C988 /* Images.xcassets in Resources */,
+				D1B4D52E18B2E12C0028C988 /* CAMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +251,7 @@
 			files = (
 				D1B4D50C18B2DF610028C988 /* CAAppDelegate.m in Sources */,
 				D1B4D50818B2DF610028C988 /* main.m in Sources */,
+				D1B4D52D18B2E12C0028C988 /* CAMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

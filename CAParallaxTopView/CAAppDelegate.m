@@ -7,6 +7,7 @@
 //
 
 #import "CAAppDelegate.h"
+#import "CAMainViewController.h"
 
 @implementation CAAppDelegate
 
@@ -14,6 +15,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    self.window.rootViewController = ({
+        UIViewController *main = [[CAMainViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
+        nav;
+    });
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
