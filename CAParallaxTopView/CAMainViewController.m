@@ -54,6 +54,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    
     if (scrollView.contentOffset.y < -200) {
         self.backgroundView.frame = CGRectMake((scrollView.contentOffset.y + 200), 0, 320 - (scrollView.contentOffset.y + 200)*2, 300 * (320 - (scrollView.contentOffset.y + 200)*2)/320);
         NSLog(@"x:%f, y:%f, width:%f, height:%f", self.backgroundView.frame.origin.x, self.backgroundView.frame.origin.y, self.backgroundView.frame.size.width, self.backgroundView.frame.size.height);
