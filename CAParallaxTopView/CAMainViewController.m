@@ -32,9 +32,10 @@
 //    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.title = @"Test";
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                             forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
+//    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRed:0 green:0 blue:155/255. alpha:.5];
+//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0];
     self.navigationController.navigationBar.translucent = YES;
     
     self.foregroundView.delegate = self;
@@ -44,6 +45,12 @@
     
     self.foregroundView.contentInset = UIEdgeInsetsMake(200, 0, 0, 0);
     self.foregroundView.contentOffset = CGPointMake(0, -100);
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.foregroundView.frame = CGRectMake(0, 64, 320, CGRectGetHeight(self.foregroundView.frame) - 64);
 }
 
 - (void)didReceiveMemoryWarning

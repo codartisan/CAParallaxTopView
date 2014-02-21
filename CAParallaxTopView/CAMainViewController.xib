@@ -42,7 +42,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="0.48401408369999999" blue="0.50363732790000004" alpha="1" colorSpace="calibratedRGB"/>
                 </scrollView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="a0A-hV-2zj">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
