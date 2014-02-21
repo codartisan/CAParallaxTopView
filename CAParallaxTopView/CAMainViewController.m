@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *backgroundView;
 @property (weak, nonatomic) IBOutlet UIScrollView *foregroundView;
+@property (weak, nonatomic) IBOutlet UIScrollView *transparentView;
 @end
 
 @implementation CAMainViewController
@@ -51,6 +52,15 @@
 {
     [super viewWillAppear:animated];
     self.foregroundView.frame = CGRectMake(0, 64, 320, CGRectGetHeight(self.foregroundView.frame) - 64);
+    
+    self.transparentView.contentSize = self.backgroundView.contentSize;
+    
+    [self.transparentView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    self.backgroundView.contentOffset = self.transparentView.contentOffset;
 }
 
 - (void)didReceiveMemoryWarning

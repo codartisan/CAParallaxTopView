@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="backgroundView" destination="bzx-J4-fkg" id="Oj2-hH-e0l"/>
                 <outlet property="foregroundView" destination="a0A-hV-2zj" id="utg-5G-jLO"/>
+                <outlet property="transparentView" destination="H5K-Gv-0Us" id="2vL-IM-Wuz"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -71,6 +72,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         </scrollView>
                     </subviews>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="H5K-Gv-0Us">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
